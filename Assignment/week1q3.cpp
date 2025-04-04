@@ -21,5 +21,25 @@ int main() {
         cout << "Division and modulus operations are not possible with a divisor of zero." << endl;
     }
 
+    // Declare a variable to store marks
+    int marks;
+
+    // Prompt the user to enter their marks
+    cout << "Enter your marks (out of 100): ";
+    cin >> marks;
+
+    // Determine the grade using if-else statements
+    if (marks >= 90) {
+        cout << "Grade: A" << endl;
+    } else if (marks >= 80) {
+        cout << "Grade: B" << endl;
+    } else if (marks >= 70) {
+        cout << "Grade: C" << endl;
+    } else if (marks >= 60) {
+        cout << "Grade: D" << endl;
+    } else {
+        cout << "Grade: F" << endl;
+    }
+
     return 0;
 }
