@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+class GradeDeterminer {
+public:
+    void determineGrade(int marks) {
+        if (marks >= 90) {
+            cout << "Grade A" << endl;
+        } else if (marks >= 80) {
+            cout << "Grade B" << endl;
+        } else if (marks >= 70) {
+            cout << "Grade C" << endl;
+        } else if (marks >= 60) {
+            cout << "Grade D" << endl;
+        } else {
+            cout << "Grade F" << endl;
+        }
+    }
+};
+
+int main() {
+    GradeDeterminer g;
+    int marks;
+    
+    cout << "Enter your marks (out of 100): ";
+    cin >> marks;
+
+    g.determineGrade(marks);
+    return 0;
+}

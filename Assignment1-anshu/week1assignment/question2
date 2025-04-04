@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+class VariableSizes {
+public:
+    void display() {
+        int intVar = 10;
+        float floatVar = 5.5f;
+        char charVar = 'A';
+        double doubleVar = 20.99;
+        bool boolVar = true;
+
+        cout << "int: " << intVar << ", size: " << sizeof(intVar) << " bytes" << endl;
+        cout << "float: " << floatVar << ", size: " << sizeof(floatVar) << " bytes" << endl;
+        cout << "char: " << charVar << ", size: " << sizeof(charVar) << " byte" << endl;
+        cout << "double: " << doubleVar << ", size: " << sizeof(doubleVar) << " bytes" << endl;
+        cout << "bool: " << boolVar << ", size: " << sizeof(boolVar) << " byte" << endl;
+    }
+};
+
+int main() {
+    VariableSizes v;
+    v.display();
+    return 0;
+}
