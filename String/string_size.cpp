@@ -8,5 +8,8 @@ int main() {
     std::cout << "Size of char: " << sizeof(letter) << " byte\n";
     std::cout << "Size of string: " << sizeof(word) << " bytes\n";
 
+    std::string a;
+    std::cout << "Printing a: " << a << std::endl; 
+
     return 0;
 }
