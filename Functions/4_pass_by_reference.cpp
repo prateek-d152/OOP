@@ -7,6 +7,7 @@ void modify(int &x) {
 
 int main() {
     int a = 5;
-    modify(a);
+    int &b = a;
+    b++;
     cout << a <<endl ;
 }
