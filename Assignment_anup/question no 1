@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Display personal information
+    cout << "Name: John Doe" << endl;
+    cout << "Age: 20" << endl;
+    cout << "Favorite Hobby: Playing Guitar" << endl;
+    return 0;
+}
