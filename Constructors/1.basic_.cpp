@@ -8,13 +8,13 @@ class Student {
     
         // Default Constructor
         Student() {
-            name = "Unknown";
-            cout << "Constructor Called\n";
+            name = "Shuvam";
+            cout << "Constructor Called for \n"<<name<<endl;
         }
     };
 
 int main(){
-    Student s1;
+    Student shuvam;
     return 0;
 }
     

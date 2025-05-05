@@ -13,6 +13,14 @@ public:
 };
 
 int main() {
+    {
     Student s1("Ali");  // Constructor runs here
     cout << "Inside main()" << endl;
+    
+    
+    Student s2("mohammad");  // Constructor runs here
+    cout << "Inside main()" << endl;
+    }
+
+
 }  // s1 goes out of scope here → Destructor runs
