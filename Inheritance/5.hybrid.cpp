@@ -33,9 +33,9 @@ int main() {
     TeachingAssistant ta;
     
     // Ambiguity occurs due to two 'Person' base classes
-    // ta.display(); // ❌ Ambiguous!
+    // ta.display(); //Ambiguous!
 
-    ta.Student::display();   // ✅ Resolving ambiguity
+    ta.Student::display();   // Resolving ambiguity
     ta.study();
     ta.teach();
     ta.assist();
