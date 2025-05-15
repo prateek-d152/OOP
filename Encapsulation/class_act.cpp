@@ -23,6 +23,13 @@ int main() {
     c.setNumber(42);    
     c.showNumber();     
 
+    class Grandchild: public Child {
+    public:
+        void adddisplaynumber() {
+            number += 10;
+            cout << "Accessed protected number: " << number << endl;
+        }
+    };
 
     return 0;
 }
