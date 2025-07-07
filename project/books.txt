@@ -1,0 +1,10 @@
+1,The Alchemist,Paulo Coelho,Fiction
+2,1984,George Orwell,Dystopian
+3,To Kill a Mockingbird,Harper Lee,Classic Fiction
+4,The Hobbit,J.R.R. Tolkien,Fantasy
+5,A Brief History of Time,Stephen Hawking,Science
+6,The Great Gatsby,F. Scott Fitzgerald,Classic Fiction
+7,Dune,Frank Herbert,Science Fiction
+8,Pride and Prejudice,Jane Austen,Romance
+9,Harry Potter and the Sorcerer’s Stone,J.K. Rowling,Fantasy
+10,Mindset,Mark Manson,Self-Help
