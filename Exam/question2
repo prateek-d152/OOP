@@ -1,0 +1,37 @@
+#include <iostream>
+#include <string>
+using namespace std;
+class Vehicle {
+protected:
+    string brand;
+    int year;
+public:
+    Vehicle(const string& b, int y) : brand(b), year(y) {}
+    void displayInfo() const {
+        cout << "Car Brand:"<<brand<<",Year of Manufacture:" <<year<<endl;
+    }
+void start() const {
+    cout << "Vehiche is starting! Ready to go?" <<endl;
+    }
+}
+;
+class Car : public Vehicle {
+private:
+    int doors;
+public:
+    Car(const string& b,int y,int d) : Vehicle(b, y),doors(d) {}
+    void displayInfo() const {
+        Vehicle::displayInfo();      
+        cout << "Doors: " << doors << endl;
+    }
+    void start() const {
+        Vehicle::start();           
+       cout << "Car is ready to go!" << endl;
+    }
+};
+int main() {
+    Car myCar("Toyota LC250", 2020, 4);
+    myCar.displayInfo();
+    myCar.start();
+    return 0;
+}

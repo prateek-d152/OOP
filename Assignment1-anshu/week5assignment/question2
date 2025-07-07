@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+// Base class
+class Animal {
+public:
+    void speak() {
+        cout << "Animal makes a sound" << endl;
+    }
+};
+
+// Derived class inheriting from Animal
+class Dog : public Animal {
+public:
+    void bark() {
+        cout << "Dog barks: Woof! Woof!" << endl;
+    }
+};
+
+int main() {
+    cout << "=== Single Inheritance Demo ===" << endl;
+    
+    // Create an object of Dog class
+    Dog myDog;
+    
+    cout << "Calling methods on Dog object:" << endl;
+    
+    // Call method from base class Animal
+    myDog.speak();
+    
+    // Call method from derived class Dog
+    myDog.bark();
+    
+    cout << "\nDemonstration complete!" << endl;
+    cout << "Dog class successfully inherited speak() from Animal class" << endl;
+    cout << "and has its own bark() method" << endl;
+    
+    return 0;
+}

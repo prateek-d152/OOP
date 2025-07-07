@@ -1,0 +1,51 @@
+#include <iostream>
+using namespace std;
+
+class Counter {
+private:
+    static int count;  // Static variable shared by all objects
+    int id;           // Non-static variable unique to each object
+
+public:
+    // Constructor that increments count and assigns it to id
+    Counter() {
+        count++;
+        id = count;
+    }
+    
+    // Display function to print both count and id
+    void display() {
+        cout << "Object ID: " << id << ", Total Count: " << count << endl;
+    }
+    
+    // Static function to get current count
+    static int getCount() {
+        return count;
+    }
+};
+
+// Initialize static variable (must be done outside class)
+int Counter::count = 0;
+
+int main() {
+    cout << "=== Static vs Non-Static Members Demo ===" << endl;
+    
+    // Create multiple Counter objects
+    Counter c1, c2, c3;
+    
+    cout << "After creating 3 Counter objects:" << endl;
+    cout << "Counter 1: "; c1.display();
+    cout << "Counter 2: "; c2.display();
+    cout << "Counter 3: "; c3.display();
+    
+    // Create more objects
+    Counter c4, c5;
+    cout << "\nAfter creating 2 more Counter objects:" << endl;
+    cout << "Counter 4: "; c4.display();
+    cout << "Counter 5: "; c5.display();
+    
+    // Display total count using static function
+    cout << "\nTotal objects created: " << Counter::getCount() << endl;
+    
+    return 0;
+}

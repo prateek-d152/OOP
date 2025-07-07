@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+class CoffeeMachine {
+private:
+    // Encapsulated method that handles the brewing process
+    void brew() {
+        cout << "Brewing coffee rn..." << endl;
+    }   
+public:
+    // Public method that serves coffee to the user
+    void serve() {
+        brew(); // Calls the private method to brew coffee
+        cout << "Coffee is served!" << endl;
+    }
+};
+
+int main() {
+    CoffeeMachine cm;
+    cm.serve();
+    return 0;
+}

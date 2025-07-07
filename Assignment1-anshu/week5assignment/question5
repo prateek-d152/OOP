@@ -1,0 +1,69 @@
+#include <iostream>
+using namespace std;
+
+// Base class
+class Vehicle {
+public:
+    void startEngine() {
+        cout << "Vehicle engine started" << endl;
+    }
+    
+    void stopEngine() {
+        cout << "Vehicle engine stopped" << endl;
+    }
+};
+
+// First derived class
+class Car : public Vehicle {
+public:
+    void describe() {
+        cout << "This is a Car:" << endl;
+        cout << "- Has 4 wheels" << endl;
+        cout << "- Comfortable for families" << endl;
+        cout << "- Can carry 4-8 passengers" << endl;
+    }
+    
+    void honk() {
+        cout << "Car honks: Beep! Beep!" << endl;
+    }
+};
+
+// Second derived class
+class Bike : public Vehicle {
+public:
+    void describe() {
+        cout << "This is a Bike:" << endl;
+        cout << "- Has 2 wheels" << endl;
+        cout << "- Fuel efficient" << endl;
+        cout << "- Easy to park" << endl;
+    }
+    
+    void ring() {
+        cout << "Bike bell rings: Ring! Ring!" << endl;
+    }
+};
+
+int main() {
+    cout << "=== Hierarchical Inheritance Demo ===" << endl;
+    
+    // Create objects of both derived classes
+    Car myCar;
+    Bike myBike;
+    
+    cout << "\n--- Car Operations ---" << endl;
+    myCar.startEngine();    // Method from Vehicle class
+    myCar.describe();       // Method from Car class
+    myCar.honk();          // Method from Car class
+    myCar.stopEngine();    // Method from Vehicle class
+    
+    cout << "\n--- Bike Operations ---" << endl;
+    myBike.startEngine();   // Method from Vehicle class
+    myBike.describe();      // Method from Bike class
+    myBike.ring();         // Method from Bike class
+    myBike.stopEngine();   // Method from Vehicle class
+    
+    cout << "\nBoth Car and Bike inherit from Vehicle class" << endl;
+    cout << "This demonstrates hierarchical inheritance (one base, multiple derived)" << endl;
+    
+    return 0;
+}

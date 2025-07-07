@@ -1,0 +1,79 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+// First base class
+class Person {
+protected:
+    string name;
+    int age;
+
+public:
+    void inputPersonData() {
+        cout << "Enter name: ";
+        cin.ignore();
+        getline(cin, name);
+        cout << "Enter age: ";
+        cin >> age;
+    }
+    
+    void displayPersonData() {
+        cout << "Name: " << name << endl;
+        cout << "Age: " << age << endl;
+    }
+};
+
+// Second base class
+class Department {
+protected:
+    string deptName;
+
+public:
+    void inputDepartmentData() {
+        cout << "Enter department name: ";
+        cin.ignore();
+        getline(cin, deptName);
+    }
+    
+    void displayDepartmentData() {
+        cout << "Department: " << deptName << endl;
+    }
+};
+
+// Derived class inheriting from both Person and Department
+class Employee : public Person, public Department {
+private:
+    int empId;
+
+public:
+    void inputEmployeeData() {
+        inputPersonData();
+        inputDepartmentData();
+        cout << "Enter employee ID: ";
+        cin >> empId;
+    }
+    
+    void displayEmployeeData() {
+        cout << "\n=== Employee Details ===" << endl;
+        displayPersonData();
+        displayDepartmentData();
+        cout << "Employee ID: " << empId << endl;
+    }
+};
+
+int main() {
+    cout << "=== Multiple Inheritance Demo ===" << endl;
+    
+    // Create an Employee object
+    Employee emp;
+    
+    cout << "Please enter employee information:" << endl;
+    emp.inputEmployeeData();
+    
+    // Display all employee data
+    emp.displayEmployeeData();
+    
+    cout << "\nEmployee class successfully inherits from both Person and Department classes" << endl;
+    
+    return 0;
+}

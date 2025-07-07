@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+class Book {
+private:
+    std::string title;
+    std::string author;
+public:
+    Book(const std::string& t, const std::string& a) : title(t), author(a) {}
+
+    void display() const {
+        std::cout << "Title: " << title << ", Author: " << author << std::endl;
+    }   
+};
+
+int main() {
+    Book book("2004", "Shyam Prasad");
+    book.display();
+    return 0;
+}
