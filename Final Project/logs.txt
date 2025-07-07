@@ -1,0 +1,43 @@
+[2025-07-03 10:51:22] Default admin account created
+[2025-07-03 10:51:22] Default user account created
+[2025-07-03 10:51:22] System started
+[2025-07-03 10:51:48] System started
+[2025-07-06 23:08:36] System started
+[2025-07-06 23:09:24] System started
+[2025-07-06 23:10:11] System started
+[2025-07-06 23:10:30] System started
+[2025-07-06 23:11:02] System started
+[2025-07-07 00:09:12] System started
+[2025-07-07 00:09:40] User registered successfully with role: user - User: rajesh
+[2025-07-07 00:10:25] System started
+[2025-07-07 00:10:41] Successful login - User: rajesh
+[2025-07-07 00:11:27] System shutdown
+[2025-07-07 00:11:41] System started
+[2025-07-07 00:11:52] Successful login - User: rajesh
+[2025-07-07 00:15:45] Failed login attempt - User: admin
+[2025-07-07 00:15:59] Failed login attempt - User: admin
+[2025-07-07 00:16:44] System started
+[2025-07-07 00:16:55] Successful login - User: admin
+[2025-07-07 00:19:47] System started
+[2025-07-07 00:20:01] Successful login - User: admin
+[2025-07-07 07:08:40] System started
+[2025-07-07 07:09:02] Successful login - User: rajesh
+[2025-07-07 07:18:46] System started
+[2025-07-07 07:19:00] Failed login attempt - User: rajesh
+[2025-07-07 07:19:11] Successful login - User: rajesh
+[2025-07-07 07:19:35] User changed password - User: rajesh
+[2025-07-07 07:20:05] System started
+[2025-07-07 07:20:18] Successful login - User: admin
+[2025-07-07 07:29:04] System started
+[2025-07-07 07:29:25] Successful login - User: admin
+[2025-07-07 07:31:31] System started
+[2025-07-07 07:31:44] Successful login - User: admin
+[2025-07-07 07:31:58] Admin deleted user account - User: rajesh
+[2025-07-07 10:10:26] System started
+[2025-07-07 10:11:46] User registered successfully with role: user - User: shreeya
+[2025-07-07 10:12:13] System started
+[2025-07-07 10:12:41] Successful login - User: shreeya
+[2025-07-07 10:13:36] Failed login attempt - User: admin
+[2025-07-07 10:13:47] System started
+[2025-07-07 10:14:36] User registered successfully with role: admin - User: rajesh12
+[2025-07-07 10:14:55] Successful login - User: rajesh12
